@@ -1,0 +1,83 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: bisque;
+    font-family: sans-serif;
+}
+.cantanier{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+    box-shadow: 4px 0 3px rgba(0, 0, 0, .3);
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.inputs input{
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    border-radius: 5px;
+
+}
+.input-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+button{
+    width: 100px;
+    height: 40px;
+    font-weight: bolder;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    color: rgb(11, 14, 5);
+    font-size: 23px;
+    border: none;
+    box-shadow: 2px 0 2px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, .8);
+}
+.timers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.timers div{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.conrols{
+    margin: 10px;
+}
+.conrols button{
+    margin: 10px;
+}
