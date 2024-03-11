@@ -1,0 +1,82 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  font-family: sans-serif;
+}
+.contaner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1{
+  font-size: 40px;
+}
+input{
+  outline: none;
+  width: 250px;
+  height: 50px;
+  font-size: 45px;
+  margin-bottom: 4px;
+}
+.suggeson{
+  width: 250px;
+  height: 300px;
+  overflow-y: auto;
+  font-size: 30px;
+  border-radius: 5px;
+  margin-bottom: 4px;
+}
+.prodcats{
+  width: auto;
+  height: 40px;
+  box-shadow: 8px 2px 2px rgba(0, 0, 0, .3);
+  background-color: bisque;
+  cursor: pointer;
+  padding: 10px;
+}
+.prodcats:hover{
+  background-color: rgb(241, 205, 161);
+  color: white;
+}
+.buketBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0 8px;
+  background-color: rgb(248, 235, 219);
+  margin-bottom: 2px;
+}
+button{
+  background-color: rgb(245, 197, 134);
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+}
+button:hover{
+  background-color: rgb(248, 149, 19);
+  color: white;
+  
+}
+.strik{
+  text-decoration: line-through;
+  color: gray;
+}

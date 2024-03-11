@@ -9,6 +9,7 @@ function App() {
   const [hours, setHours] = useState(0)
   const [min, setMin] = useState(0)
   const [sec, setSec] = useState(0)
+  const [puse , setPuse] = useState(true)
 
   const handelSubmit = (e)=>{
      let value = e.target.value 
@@ -62,7 +63,10 @@ function App() {
         <div>10</div>
        </div>
        <div className="conrols">
-        <button>Puse</button>
+        {
+          puse ? <button>Puse</button> :<button>Resume</button>
+        }
+        
         <button onClick={reset}>Reset</button>
        </div>
       </div>
