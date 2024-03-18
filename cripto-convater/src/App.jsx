@@ -5,11 +5,12 @@ import viteLogo from '/vite.svg'
 
 function App() {
   const arr = ['usd', 'eur', 'gbp', 'cny', 'jpy'];
-  const [isUp, setIsUp] = useState(true);
-  const [diff, setDiff] = useState(0);
+  
   const [currency, setCurrency] = useState(0)
   const [selectedCurr , setSelectedCurr] = useState('usd')
   const [convertedCurr, setConvertedCurr] = useState(0)
+  const [isUp, setIsUp] = useState(true);
+  const [diff, setDiff] = useState(0);
 
  
   const currencyHandel = (e)=>{
@@ -27,12 +28,14 @@ function App() {
        const data = await fetchData.json()
        const val =  await data.value
         setConvertedCurr(currency*val)
-        window.sessionStorage.setItem('pravVal',currency*val.toFixed(2) )
-       const prvVal =  window.sessionStorage.getItem('pravVal')
-       const diff =  currency*val.toFixed(2)- prvVal
-      diff > 0 ? setIsUp(false) : setIsUp(true)
+       
+       const prvVal = parseFloat( window.sessionStorage.getItem('pravVal'))
+       
+       const diff = (currency*val - prvVal).toFixed(2)
+       console.log(diff)
+       diff > 0 ? setIsUp(false) : setIsUp(true)
         setDiff(diff)
-
+        window.sessionStorage.setItem('pravVal',currency*val.toFixed(2) )
     } catch (error) {
       console.log("Error: ", error)
     }
