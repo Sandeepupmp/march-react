@@ -1,0 +1,53 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cantainer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+
+}
+input{
+    width: 150px;
+    height: 35px;
+    font-size: 30px;
+
+}
+select{
+    width: 150px;
+    height: 39px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.input-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.currData{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    font-size: 35px;
+
+}
+.currData > div:first-child{
+      font-weight: bolder;
+ }
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
